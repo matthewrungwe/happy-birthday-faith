@@ -40,7 +40,7 @@ body {
     font-size: 2rem;
     font-weight: 500;
     padding: 20px 0 50px 50px;
-    /* font-family: 'Great Vibes'; */
+    font-family: 'Great Vibes';
 }
 
 #header .message {
@@ -59,6 +59,7 @@ body {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.6;
+    font-family: 'Tangerine', 'Sacramento';
 }
 
 #header .message p span {
@@ -95,6 +96,10 @@ body {
     width: 80%;
     margin: 0 auto;
     border: 1px solid orange;
+}
+
+#main .wish .content .one {
+    font-family: 'Dancing Script';
 }
 
 #main .wish .content p {
