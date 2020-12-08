@@ -1,0 +1,199 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */ 
+body {
+    font-family: 'Poppins', 'Source Sans Pro', 'Roboto', sans-serif;
+    color: #54585a;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(84, 88, 90, 0.5);
+}
+
+/* Header */
+#header {
+    height: 100vh;
+    background-image: url('../../assets/img5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#header .navigation .brand-name h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 20px 0 50px 50px;
+    /* font-family: 'Great Vibes'; */
+}
+
+#header .message {
+    padding: 50px 0;
+}
+
+#header .message h2 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#header .message p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#header .message p span {
+    display: block;
+}
+/* Header end */
+
+/* Main */
+/* Wishes section */
+#main {
+    padding: 50px 0;
+}
+
+#main .wishes {
+    padding-bottom: 50px;
+}
+
+#main .wish {
+    display: flex;
+    padding-top: 20px;
+}
+
+#main .wish .image,
+#main .wish .content {
+    flex: 1;
+}
+
+#main .wish .image img {
+    width: 100%;
+    height: 350px;
+}
+
+#main .wish .content {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid orange;
+}
+
+#main .wish .content p {
+    text-align: justify;
+    line-height: 1.5;
+    padding: 5px 20px;
+}
+
+/* #main .content-right .content p {
+    padding
+} */
+
+/* Encouragement verse Section */
+#main .encouragement-verse {
+    height: 250px;
+    background-image: url('../../assets/img2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .encouragement-verse h3 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+#main .encouragement-verse .verse {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#main .encouragement-verse p {
+    text-align: center;
+    padding: 5px 10px;
+    color: #fff;
+    font: 1.125rem;
+    font-style: italic;
+}
+
+#main .encouragement-verse p span {
+    font-size: 2rem;
+}
+/* Main end */
+
+/* Footer */
+#footer {
+    padding: 20px 0 50px 0;
+}
+
+#footer .copyright p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#footer .copyright a {
+    text-decoration: none;
+    color: #551d11;
+}
+
+#footer .copyright a:hover {
+    color: rgba(85, 29, 17, 0.8);
+}
+/* Footer end */
+
+@media screen and (max-width: 62rem) { /* Medium viewport */
+    /* Header */ 
+    #header .message h2 {
+        font-size: 3rem;
+    }
+    
+    #header .message p {
+        font-size: 1.3rem;
+    }
+    /* Header end */
+    
+    /* Main */
+    #main .wish .image img {
+        height: 400px;
+    }
+    
+    #main .content-right {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #main .content-left {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    /* Main end */
+} 
+
+@media screen and (max-width: 48rem) { /* Small viewport */
+    /* Main */
+    #main .wish .image img {
+        height: 250px;
+    }
+    /* Main end */
+}
